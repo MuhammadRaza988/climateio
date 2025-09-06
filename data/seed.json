@@ -1,0 +1,164 @@
+{
+  "districts": [
+    {
+      "id": "karachi",
+      "name": "Karachi",
+      "nameUrdu": "کراچی",
+      "province": "Sindh",
+      "coordinates": [24.8607, 67.0011]
+    },
+    {
+      "id": "hyderabad",
+      "name": "Hyderabad",
+      "nameUrdu": "حیدرآباد",
+      "province": "Sindh",
+      "coordinates": [25.396, 68.3578]
+    },
+    {
+      "id": "sukkur",
+      "name": "Sukkur",
+      "nameUrdu": "سکھر",
+      "province": "Sindh",
+      "coordinates": [27.7058, 68.8574]
+    },
+    {
+      "id": "dadu",
+      "name": "Dadu",
+      "nameUrdu": "دادو",
+      "province": "Sindh",
+      "coordinates": [26.7297, 67.7822]
+    },
+    {
+      "id": "muzaffargarh",
+      "name": "Muzaffargarh",
+      "nameUrdu": "مظفرگڑھ",
+      "province": "Punjab",
+      "coordinates": [30.0704, 71.1925]
+    },
+    {
+      "id": "charsadda",
+      "name": "Charsadda",
+      "nameUrdu": "چارسدہ",
+      "province": "Khyber Pakhtunkhwa",
+      "coordinates": [34.1482, 71.7308]
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub_001",
+      "timestamp": "2024-01-15T10:30:00Z",
+      "district": "karachi",
+      "coordinates": [24.8615, 67.0099],
+      "classification": "Clean",
+      "confidence": 0.89,
+      "indicators": [
+        { "name": "turbidity", "score": 0.15, "status": "good" },
+        { "name": "color_clarity", "score": 0.92, "status": "good" },
+        { "name": "oil_sheen", "score": 0.05, "status": "good" },
+        { "name": "debris", "score": 0.08, "status": "good" }
+      ],
+      "submittedBy": "Community Health Worker",
+      "notes": "Clear water from municipal supply"
+    },
+    {
+      "id": "sub_002",
+      "timestamp": "2024-01-14T15:45:00Z",
+      "district": "hyderabad",
+      "coordinates": [25.3845, 68.3712],
+      "classification": "Unsafe",
+      "confidence": 0.94,
+      "indicators": [
+        { "name": "turbidity", "score": 0.87, "status": "poor" },
+        { "name": "color_clarity", "score": 0.23, "status": "poor" },
+        { "name": "oil_sheen", "score": 0.45, "status": "moderate" },
+        { "name": "debris", "score": 0.78, "status": "poor" }
+      ],
+      "submittedBy": "Field Researcher",
+      "notes": "Post-flood contamination visible"
+    },
+    {
+      "id": "sub_003",
+      "timestamp": "2024-01-13T08:20:00Z",
+      "district": "sukkur",
+      "coordinates": [27.7125, 68.8445],
+      "classification": "Needs Testing",
+      "confidence": 0.67,
+      "indicators": [
+        { "name": "turbidity", "score": 0.55, "status": "moderate" },
+        { "name": "color_clarity", "score": 0.48, "status": "moderate" },
+        { "name": "oil_sheen", "score": 0.12, "status": "good" },
+        { "name": "debris", "score": 0.34, "status": "moderate" }
+      ],
+      "submittedBy": "Local Volunteer",
+      "notes": "Slightly cloudy, requires lab analysis"
+    },
+    {
+      "id": "sub_004",
+      "timestamp": "2024-01-12T14:10:00Z",
+      "district": "dadu",
+      "coordinates": [26.7234, 67.7956],
+      "classification": "Unsafe",
+      "confidence": 0.91,
+      "indicators": [
+        { "name": "turbidity", "score": 0.92, "status": "poor" },
+        { "name": "color_clarity", "score": 0.18, "status": "poor" },
+        { "name": "oil_sheen", "score": 0.67, "status": "poor" },
+        { "name": "debris", "score": 0.85, "status": "poor" }
+      ],
+      "submittedBy": "NDMA Inspector",
+      "notes": "Heavy contamination after industrial discharge"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alert_001",
+      "district": "hyderabad",
+      "riskLevel": "high",
+      "cause": "flood",
+      "confidence": 0.94,
+      "issuedDate": "2024-01-14T16:00:00Z",
+      "status": "active",
+      "title": "Water Contamination Alert - Hyderabad",
+      "titleUrdu": "پانی کی آلودگی کا انتباہ - حیدرآباد",
+      "description": "High levels of contamination detected in water sources following recent flooding. Avoid consumption without proper treatment.",
+      "descriptionUrdu": "حالیہ سیلاب کے بعد پانی کے ذرائع میں آلودگی کی اعلیٰ سطح کا پتہ چلا ہے۔ مناسب علاج کے بغیر استعمال سے بچیں۔",
+      "recommendations": [
+        "Boil water for 3-5 minutes before consumption",
+        "Use water purification tablets if available",
+        "Seek alternative clean water sources",
+        "Report any illness to health authorities"
+      ],
+      "recommendationsUrdu": [
+        "استعمال سے پہلے پانی کو 3-5 منٹ تک ابالیں",
+        "اگر دستیاب ہو تو پانی صاف کرنے والی گولیاں استعمال کریں",
+        "متبادل صاف پانی کے ذرائع تلاش کریں",
+        "کسی بھی بیماری کی اطلاع صحت کے حکام کو دیں"
+      ]
+    },
+    {
+      "id": "alert_002",
+      "district": "dadu",
+      "riskLevel": "critical",
+      "cause": "industrial_discharge",
+      "confidence": 0.96,
+      "issuedDate": "2024-01-12T15:30:00Z",
+      "status": "active",
+      "title": "Critical Water Contamination - Dadu",
+      "titleUrdu": "انتہائی خطرناک پانی کی آلودگی - دادو",
+      "description": "Severe industrial contamination detected. Immediate action required to prevent health risks.",
+      "descriptionUrdu": "شدید صنعتی آلودگی کا پتہ چلا ہے۔ صحت کے خطرات سے بچنے کے لیے فوری اقدام درکار ہے۔",
+      "recommendations": [
+        "DO NOT consume local water sources",
+        "Use only bottled or verified clean water",
+        "Evacuate if possible until situation improves",
+        "Contact emergency services immediately"
+      ],
+      "recommendationsUrdu": [
+        "مقامی پانی کے ذرائع استعمال نہ کریں",
+        "صرف بوتل بند یا تصدیق شدہ صاف پانی استعمال کریں",
+        "اگر ممکن ہو تو صورتحال بہتر ہونے تک انخلاء کریں",
+        "فوری طور پر ایمرجنسی سروسز سے رابطہ کریں"
+      ]
+    }
+  ]
+}
